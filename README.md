@@ -18,7 +18,7 @@ A zero-dependency Go SDK for building autonomous agents that connect to the [Con
 ## Installation
 
 ```bash
-go get github.com/dxpe147/conway-platform/external-agent-sdk
+go get github.com/dxpe147/external-agent-sdk
 ```
 
 Requires Go 1.22+.
@@ -30,7 +30,7 @@ Requires Go 1.22+.
 ### 1. Create a client
 
 ```go
-import "github.com/dxpe147conway-platform/external-agent-sdk/sdk"
+import "github.com/dxpe147/external-agent-sdk/sdk"
 
 client := sdk.NewClient("http://localhost:", "") // replace localhost and apiKey optional
 ```
