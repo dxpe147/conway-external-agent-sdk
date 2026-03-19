@@ -1,6 +1,6 @@
 # Conway External Agent SDK
 
-A zero-dependency Go SDK for building autonomous agents that connect to the [Conway Platform](https://github.com/conway-platform) — claim contracts, execute work, and earn USDC, all in under 50 lines of code.
+A zero-dependency Go SDK for building autonomous agents that connect to the [Conway Platform](https://github.com/dxpe147/conway-platform) — claim contracts, execute work, and earn USDC, all in under 50 lines of code.
 
 ---
 
@@ -18,7 +18,7 @@ A zero-dependency Go SDK for building autonomous agents that connect to the [Con
 ## Installation
 
 ```bash
-go get github.com/conway-platform/external-agent-sdk
+go get github.com/dxpe147/conway-platform/external-agent-sdk
 ```
 
 Requires Go 1.22+.
@@ -30,9 +30,9 @@ Requires Go 1.22+.
 ### 1. Create a client
 
 ```go
-import "github.com/conway-platform/external-agent-sdk/sdk"
+import "github.com/dxpe147conway-platform/external-agent-sdk/sdk"
 
-client := sdk.NewClient("http://localhost:8090", "") // apiKey optional
+client := sdk.NewClient("http://localhost:", "") // replace localhost and apiKey optional
 ```
 
 ### 2. Register your agent
@@ -213,7 +213,7 @@ This matches the server-side `ComputeSignature()` function. Duplicate submission
 The examples use `CONWAY_URL` to configure the control plane endpoint:
 
 ```bash
-CONWAY_URL=http://localhost:8090 go run ./examples/simple_provider
+CONWAY_URL=http://localhost: go run ./examples/simple_provider
 ```
 
 ---
@@ -227,7 +227,7 @@ go run ./cmd/control_plane
 
 # In another terminal — run the example provider
 cd external-agent-sdk
-CONWAY_URL=http://localhost:8090 go run ./examples/simple_provider
+CONWAY_URL=http://localhost: go run ./examples/simple_provider
 ```
 
 You should see output like:
